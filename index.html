@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Kalkoolator</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="header">Kalkoolator</div>
+        <!-- display: this displays inputs / outputs on the screen -->
+        <div class="display">
+            <textarea name="" id="display" cols="50" rows="2" autofocus></textarea>
+        </div>
+        <!-- rows: 7, 8, 9, / -->
+        <div class="second-row">
+            <button type="button" id="seven">7</button>
+            <button type="button" id="eight">8</button>
+            <button type="button" id="nine">9</button>
+            <button type="button" id="divide">/</button>
+        </div>
+        <!-- rows: 4, 5, 6, * -->
+        <div class="third-row">
+            <button type="button" id="four">4</button>
+            <button type="button" id="five">5</button>
+            <button type="button" id="six">6</button>
+            <button type="button" id="multiply">*</button>
+        </div>
+        <!-- rows: 1, 2, 3, - -->
+        <div class="fourth-row">
+            <button type="button" id="one">1</button>
+            <button type="button" id="two">2</button>
+            <button type="button" id="three">3</button>
+            <button type="button" id="subtract">-</button>
+        </div>
+        <!-- rows: 0, . backspace, + -->
+        <div class="fifth-row">
+            <button type="button" id="zero">0</button>
+            <button type="button" id="dot"><span>.</span></button>
+            <button type="button" id="backspace">
+                <img src="./img/backspace-svgrepo-com.svg" alt="backspace">
+            </button>
+            <button type="button" id="add">+</button>
+        </div>
+        <!-- rows: clear, = -->
+        <div class="sixth-row">
+            <button type="button" id="clear">CLS</button>
+            <button type="button" id="equal">=</button>
+        </div>
+        <!-- footer section -->
+        <div class="footer"><span>Machemileche &#169; 2024</span></div>
+    </div>
 </body>
 
 </html>
