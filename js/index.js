@@ -1,3 +1,8 @@
+// global variables for performing calculations
+let firstNumber;
+let secondNumber;
+let operator; // * +  - /
+
 // add function
 function add(a, b) {
     return Number(a) + Number(b);
